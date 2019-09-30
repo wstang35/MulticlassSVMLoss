@@ -4,8 +4,8 @@ def multiclass_hinge_loss(scores, classes):
     """
     Computer svm loss for multi classification
     Args:
-      labels: One hot label, int32 tensor of shape [batch_size, num_classes] or [batch_size, seq_len, num_classes].
-      logits: A float32 tensor of shape [batch_size,num_classes] or [batch_size, seq_len, num_classes]..
+      classes: One hot label, int32 tensor of shape [batch_size, num_classes] or [batch_size, seq_len, num_classes].
+      scores: A float32 tensor of shape [batch_size,num_classes] or [batch_size, seq_len, num_classes]..
     Returns:
       A tensor of the same shape as [batch_sizes] or [batch_size, seq_len].
     """
